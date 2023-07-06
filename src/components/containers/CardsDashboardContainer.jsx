@@ -10,22 +10,25 @@ const CardsDashboardContainer = () => {
       <CardDashboard
         logo={facebook}
         username={"@makkudev"}
-        followers={1233}
+        followers={1987}
         className=" bg-facebook"
+        up={12}
       />
 
       <CardDashboard
         logo={twitter}
         username={"@makkudev"}
-        followers={1233}
+        followers={1044}
         className="bg-twitter"
+        up={99}
       />
 
       <CardDashboard
         logo={instagram}
         username={"@makkudev"}
-        followers={1233}
+        followers={11234}
         className="bg-gradient-to-r from-instagram-gradient-start to-instagram-gradient-end"
+        up={1099}
       />
 
       <CardDashboard
@@ -34,6 +37,7 @@ const CardsDashboardContainer = () => {
         followers={1233}
         subs={true}
         className="bg-youtube"
+        down={144}
       />
     </div>
   );
