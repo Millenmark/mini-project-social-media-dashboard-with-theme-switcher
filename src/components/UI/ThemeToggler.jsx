@@ -1,37 +1,26 @@
-import {useState, useEffect} from 'react'
+/* eslint-disable no-unused-vars */
+import { useState, useEffect, useContext } from "react";
+import Toggle from "../partials/Toggle";
+import { ToggleContext } from "../../context/ToggleContext";
 
 const ThemeToggler = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "");
+  const { isToggleActive } = useContext(ToggleContext);
 
   useEffect(() => {
     const rootElement = document.documentElement;
-    if (theme === "dark") {
+    if (theme === "dark" && isToggleActive) {
       rootElement.classList.add("dark");
     } else {
       rootElement.classList.remove("dark");
     }
-  }, [theme]);
-
-  const handleToggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-      localStorage.setItem("theme", "light");
-    } else {
-      setTheme("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  };
+  }, [theme, isToggleActive]);
 
   return (
-    <div className="flex justify-center mt-8">
-      <button
-        className="rounded-full bg-slate-400 py-2 px-4"
-        onClick={handleToggleTheme}
-      >
-        {theme === "dark" ? "Dark" : "Light"}
-      </button>
-    </div>
+    <>
+      <Toggle />
+    </>
   );
-}
+};
 
-export default ThemeToggler
+export default ThemeToggler;
