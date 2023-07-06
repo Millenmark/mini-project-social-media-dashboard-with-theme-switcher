@@ -7,7 +7,7 @@ const CardDashboard = ({ logo, username, followers, subs, className }) => {
         <img src={logo} alt="" /> {username}
       </div>
       <div className="my-5 flex flex-col items-center justify-center">
-        <span className=" text-6xl font-bold">{followers}</span>
+        <span className=" text-6xl font-bold mb-1">{followers}</span>
         <p className=" tracking-[0.45em] uppercase">
           {subs ? "subscribers" : "followers"}
         </p>
