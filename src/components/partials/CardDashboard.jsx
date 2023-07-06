@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-const CardDashboard = ({ logo, username, followers, subs }) => {
+const CardDashboard = ({ logo, username, followers, subs, className }) => {
   return (
-    <div className=" bg-light-card-bg dark:bg-dark-card-bg flex flex-col justify-center items-center">
+    <div className=" bg-light-card-bg dark:bg-dark-card-bg flex flex-col justify-center items-center rounded-lg overflow-hidden">
+      <div className={`w-full h-1 ${className}`}></div>
       <div className="flex justify-center items-center gap-3 my-5">
         <img src={logo} alt="" /> {username}
       </div>
