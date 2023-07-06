@@ -30,7 +30,9 @@ const ThemeToggler = () => {
         </span>
         <div
           className={`cursor-pointer w-14 h-7 flex items-center bg-gradient-to-r from-primary-gradient-start to-primary-gradient-end rounded-full px-1 ${
-            theme === "dark" ? "bg-cyan-700" : " bg-light-toggle"
+            theme === "dark"
+              ? "bg-gradient-to-r from-dark-toggle-start to-dark-toggle-end"
+              : " bg-light-toggle"
           }`}
           onClick={handleToggleActive}
         >
