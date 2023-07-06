@@ -1,5 +1,5 @@
 import ThemeToggler from "../components/UI/ThemeToggler";
-import CardDashboard from "../components/partials/CardDashboard";
+import { CardsDashboardContainer } from "../components/containers";
 import Heading from "../components/partials/Heading";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className="container mx-auto px-4">
       <Heading />
       <ThemeToggler />
-      <CardDashboard />
+      <CardsDashboardContainer />
     </div>
   );
 };
