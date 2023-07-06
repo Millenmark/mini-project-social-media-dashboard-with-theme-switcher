@@ -13,8 +13,8 @@ const CardDashboard = ({
   className,
 }) => {
   return (
-    <div className=" bg-light-card-bg dark:bg-dark-card-bg flex flex-col justify-center items-center rounded-lg overflow-hidden">
-      <div className={`w-full h-1 ${className}`}></div>
+    <div className=" bg-light-card-bg dark:bg-dark-card-bg flex flex-col justify-center items-center rounded-lg overflow-hidden pt-3 pb-5 relative">
+      <div className={`w-full h-1 ${className} absolute top-0`}></div>
       <div className="flex justify-center items-center gap-3 my-5">
         <img src={logo} alt="" /> {username}
       </div>
@@ -26,11 +26,19 @@ const CardDashboard = ({
           {subs ? "subscribers" : "followers"}
         </p>
       </div>
-      <span className="flex justify-center items-center">
-        {(up && <img src={upArrow} alt="arrow up" />) ||
-          (down && <img src={downArrow} alt="arrow down" />)}{" "}
-        {up || down} Today
-      </span>
+      <div className="flex justify-center items-center gap-1">
+        <span>
+          {(up && <img src={upArrow} alt="arrow up" />) ||
+            (down && <img src={downArrow} alt="arrow down" />)}
+        </span>
+        <span
+          className={`${
+            up ? "text-lime-green" : "text-bright-red"
+          } text-xs font-bold`}
+        >
+          {up || down} Today
+        </span>
+      </div>
     </div>
   );
 };
