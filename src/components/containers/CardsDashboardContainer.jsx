@@ -33,7 +33,7 @@ const CardsDashboardContainer = () => {
 
       <CardDashboard
         logo={youtube}
-        username={"@makkudev"}
+        username={"Makku Dev"}
         followers={1233}
         subs={true}
         className="bg-youtube"
