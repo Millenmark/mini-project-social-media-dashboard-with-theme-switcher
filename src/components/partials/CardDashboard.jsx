@@ -26,9 +26,9 @@ const CardDashboard = ({
           {subs ? "subscribers" : "followers"}
         </p>
       </div>
-      <span>
-        {(up && <img src={upArrow} alt="" />) ||
-          (down && <img src={downArrow} alt="" />)}{" "}
+      <span className="flex justify-center items-center">
+        {(up && <img src={upArrow} alt="arrow up" />) ||
+          (down && <img src={downArrow} alt="arrow down" />)}{" "}
         {up || down} Today
       </span>
     </div>
