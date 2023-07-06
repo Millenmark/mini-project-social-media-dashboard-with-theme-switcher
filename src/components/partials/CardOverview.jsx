@@ -1,16 +1,20 @@
 /* eslint-disable react/prop-types */
 const CardOverview = ({ title, logo, number, status }) => {
+  const { state, percent } = status;
+
   return (
-    <div>
-      <div>
-        <h3>{title}</h3>
+    <div className="p-8 bg-light-card-bg dark:bg-dark-card-bg rounded-lg">
+      <div className="flex justify-between items-center mb-5">
+        <h3 className="text-normal capitalize font-bold text-light-text dark:text-dark-text">
+          {title}
+        </h3>
         <img src={logo} alt="logo" />
       </div>
-      <div>
-        <span>{number}</span>
+      <div className="flex justify-between items-center">
+        <span className="text-4xl font-bold">{number}</span>
         <span>
-          {status.state}
-          {status.percent}
+          {state}
+          {percent}
         </span>
       </div>
     </div>
