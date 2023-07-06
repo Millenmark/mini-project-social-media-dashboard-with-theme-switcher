@@ -16,13 +16,16 @@ const CardDashboard = ({
     <div className=" bg-light-card-bg dark:bg-dark-card-bg flex flex-col justify-center items-center rounded-lg overflow-hidden pt-3 pb-5 relative">
       <div className={`w-full h-1 ${className} absolute top-0`}></div>
       <div className="flex justify-center items-center gap-3 my-5">
-        <img src={logo} alt="" /> {username}
+        <img src={logo} alt="" />{" "}
+        <p className="font-bold text-sm text-light-text dark:text-dark-text">
+          {username}
+        </p>
       </div>
       <div className="my-5 flex flex-col items-center justify-center">
         <span className=" text-6xl font-bold mb-1">
           {shortenNumber(followers)}
         </span>
-        <p className=" tracking-[0.45em] uppercase">
+        <p className=" tracking-[0.45em] uppercase text-light-text dark:text-dark-text">
           {subs ? "subscribers" : "followers"}
         </p>
       </div>
