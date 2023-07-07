@@ -1,18 +1,5 @@
 import CardOverview from "../partials/CardOverview";
-import facebook from "../../assets/icon-facebook.svg";
-
-const overviews = [
-  {
-    name: "facebook",
-    title: "page views",
-    number: 87,
-    logo: facebook,
-    status: {
-      state: "up",
-      percent: 2,
-    },
-  },
-];
+import { overviews } from "../../services/contents";
 
 const Overview = () => {
   return (
