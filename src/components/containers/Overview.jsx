@@ -8,19 +8,21 @@ const Overview = () => {
         Overview - Today
       </h2>
 
-      {overviews.map((overview, index) => {
-        const { title, number, logo, status } = overview;
+      <div className="flex flex-col gap-7">
+        {overviews.map((overview, index) => {
+          const { title, number, logo, status } = overview;
 
-        return (
-          <CardOverview
-            key={index}
-            title={title}
-            number={number}
-            logo={logo}
-            status={status}
-          />
-        );
-      })}
+          return (
+            <CardOverview
+              key={index}
+              title={title}
+              number={number}
+              logo={logo}
+              status={status}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
