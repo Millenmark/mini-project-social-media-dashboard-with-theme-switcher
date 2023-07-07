@@ -5,8 +5,10 @@ import Heading from "../components/partials/Heading";
 const Home = () => {
   return (
     <div className="container mx-auto px-4">
-      <Heading />
-      <ThemeToggler />
+      <div className="md:flex md:justify-between md:items-center">
+        <Heading />
+        <ThemeToggler />
+      </div>
       <Dashboard />
       <Overview />
     </div>
