@@ -14,7 +14,7 @@ const CardOverview = ({ title, logo, number, status }) => {
         </h3>
         <img src={logo} alt="logo" />
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-end">
         <span className="text-4xl font-bold">{shortenNumber(number)}</span>
         <span className="flex justify-center items-center gap-1">
           <img
