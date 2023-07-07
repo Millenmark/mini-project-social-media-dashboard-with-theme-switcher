@@ -3,6 +3,54 @@ import instagram from "../assets/icon-instagram.svg";
 import twitter from "../assets/icon-twitter.svg";
 import youtube from "../assets/icon-youtube.svg";
 
+export const socials = [
+  {
+    logo: facebook,
+    username: "@makkudev",
+    followers: 1987,
+    colorScheme: "bg-facebook",
+    subs: false,
+    state: {
+      status: "up",
+      percent: 12,
+    },
+  },
+  {
+    logo: twitter,
+    username: "@makkudev",
+    followers: 1040,
+    colorScheme: "bg-twitter",
+    subs: false,
+    state: {
+      status: "up",
+      percent: 99,
+    },
+  },
+  {
+    logo: instagram,
+    username: "@makkudev",
+    followers: 11234,
+    colorScheme:
+      "bg-gradient-to-r from-instagram-gradient-start to-instagram-gradient-end",
+    subs: false,
+    state: {
+      status: "up",
+      percent: 1099,
+    },
+  },
+  {
+    logo: youtube,
+    username: "Makku Dev",
+    followers: 8239,
+    colorScheme: "bg-youtube",
+    subs: true,
+    state: {
+      status: "down",
+      percent: 144,
+    },
+  },
+];
+
 export const overviews = [
   {
     name: "facebook",
