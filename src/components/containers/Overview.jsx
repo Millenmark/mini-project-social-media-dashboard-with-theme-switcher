@@ -8,7 +8,7 @@ const Overview = () => {
         Overview - Today
       </h2>
 
-      <div className="flex flex-col gap-7 mb-14">
+      <div className="grid gap-7 mb-14 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         {overviews.map((overview, index) => {
           const { title, number, logo, status } = overview;
 
