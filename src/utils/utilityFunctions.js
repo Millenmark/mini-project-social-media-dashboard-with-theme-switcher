@@ -1,5 +1,5 @@
 export const shortenNumber = (number) => {
-  if (number < 10000) {
+  if (number < 1000) {
     return number.toString(); // Return the number as is if it's less than 1000
   } else {
     let suffixes = ["", "k", "M", "B", "T"]; // Define the suffixes for each magnitude
