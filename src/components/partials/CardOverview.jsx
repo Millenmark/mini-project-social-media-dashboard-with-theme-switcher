@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import upArrow from "../../assets/icon-up.svg";
 import downArrow from "../../assets/icon-down.svg";
+import { shortenNumber } from "../../utils/utilityFunctions";
 
 const CardOverview = ({ title, logo, number, status }) => {
   const { state, percent } = status;
@@ -14,7 +15,7 @@ const CardOverview = ({ title, logo, number, status }) => {
         <img src={logo} alt="logo" />
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-4xl font-bold">{number}</span>
+        <span className="text-4xl font-bold">{shortenNumber(number)}</span>
         <span className="flex justify-center items-center gap-1">
           <img
             src={state === "up" ? upArrow : downArrow}
