@@ -8,6 +8,16 @@ export const overviews = [
     logo: facebook,
     status: {
       state: "up",
+      percent: 3,
+    },
+  },
+  {
+    name: "facebook",
+    title: "likes",
+    number: 52,
+    logo: facebook,
+    status: {
+      state: "down",
       percent: 2,
     },
   },
