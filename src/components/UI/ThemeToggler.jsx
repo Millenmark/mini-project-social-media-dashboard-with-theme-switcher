@@ -23,8 +23,8 @@ const ThemeToggler = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center z-30 pt-4">
-      <div className="flex justify-between w-full items-center">
+    <div className="w-full md:w-auto h-full flex flex-col justify-center items-center z-30 pt-4">
+      <div className="flex justify-between w-full items-center md:justify-normal md:gap-4">
         <span className="text-light-text dark:text-dark-text text-sm font-bold">
           Dark Mode
         </span>
