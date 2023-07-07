@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+import upArrow from "../../assets/icon-up.svg";
+import downArrow from "../../assets/icon-down.svg";
+
 const CardOverview = ({ title, logo, number, status }) => {
   const { state, percent } = status;
 
@@ -13,7 +16,10 @@ const CardOverview = ({ title, logo, number, status }) => {
       <div className="flex justify-between items-center">
         <span className="text-4xl font-bold">{number}</span>
         <span>
-          {state}
+          <img
+            src={state === "up" ? upArrow : downArrow}
+            alt={`arrow ${state}`}
+          />
           {percent}
         </span>
       </div>
