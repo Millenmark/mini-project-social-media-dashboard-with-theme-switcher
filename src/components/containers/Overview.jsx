@@ -8,7 +8,7 @@ const Overview = () => {
         Overview - Today
       </h2>
 
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 mb-14">
         {overviews.map((overview, index) => {
           const { title, number, logo, status } = overview;
 
