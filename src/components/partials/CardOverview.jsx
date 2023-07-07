@@ -15,12 +15,18 @@ const CardOverview = ({ title, logo, number, status }) => {
       </div>
       <div className="flex justify-between items-center">
         <span className="text-4xl font-bold">{number}</span>
-        <span>
+        <span className="flex justify-center items-center gap-1">
           <img
             src={state === "up" ? upArrow : downArrow}
             alt={`arrow ${state}`}
           />
-          {percent}
+          <p
+            className={`${
+              state === "up" ? "text-lime-green" : "text-bright-red"
+            } text-sm font-bold`}
+          >
+            {percent}%
+          </p>
         </span>
       </div>
     </div>
