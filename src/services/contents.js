@@ -1,4 +1,5 @@
 import facebook from "../assets/icon-facebook.svg";
+import instagram from "../assets/icon-instagram.svg";
 
 export const overviews = [
   {
@@ -19,6 +20,26 @@ export const overviews = [
     status: {
       state: "down",
       percent: 2,
+    },
+  },
+  {
+    name: "instagram",
+    title: "likes",
+    number: 5462,
+    logo: instagram,
+    status: {
+      state: "up",
+      percent: 2257,
+    },
+  },
+  {
+    name: "instagram",
+    title: "profile views",
+    number: 54628,
+    logo: instagram,
+    status: {
+      state: "up",
+      percent: 2257,
     },
   },
 ];
